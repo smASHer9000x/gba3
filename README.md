@@ -2,7 +2,9 @@
 
 The BEST way to play your retro game library.
 
-## Hosting a Library
+Wiki & Guides to hosting and creating a library: [wiki](https://github.com/Cattn/GBAv3/wiki)
+
+## Creating a Library
 We offer a tool to automatically generate the required files when hosting a library to be added.
 
 ### Prerequisites:
