@@ -1,6 +1,6 @@
 <script lang="ts">
        import { Separator } from "$lib/components/ui/separator";
-       import mainLogo from "$lib/images/GBA_2_main_2.png";
+       import mainLogo from "$lib/images/GBA_3_main.png";
 </script>
 
 <Separator class="my-4 mt-56" />

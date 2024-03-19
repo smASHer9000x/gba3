@@ -1,5 +1,5 @@
 <script lang="ts">
-    import mainLogo from "$lib/images/GBA_2_main_2.png";
+    import mainLogo from "$lib/images/GBA_3_main.png";
     let hovered = false;
 
     //include all old titles here, maybe change occasionally?
