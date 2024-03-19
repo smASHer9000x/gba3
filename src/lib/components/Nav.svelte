@@ -61,8 +61,8 @@
         <Menubar.Item href="{base}/singleplayer">Singleplayer</Menubar.Item>
         <Menubar.Item href="{base}/library">Manage Library</Menubar.Item>
         <Menubar.Separator />
-        <Menubar.Item>Play ROM</Menubar.Item>
-        <Menubar.Item>Patch ROM</Menubar.Item>
+        <Menubar.Item href="{base}/testlaunch/index.html">Play ROM</Menubar.Item>
+        <Menubar.Item disabled>Patch ROM</Menubar.Item>
         <Menubar.Separator />
         <Menubar.Item href="https://discord.gg/math-study-934807331668099142">Suggest a Game</Menubar.Item>
       </Menubar.Content>
