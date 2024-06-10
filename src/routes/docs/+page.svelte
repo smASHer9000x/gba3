@@ -102,54 +102,20 @@
                     Library Info
                 </h1>
                 <p class="text-lg text-muted-foreground">
-                    Add or make a Library for GBA2.0! This guide will cover the basics of adding, as well as making your own library<br> with GBA2.0 support!
+                    General information about creation of libraries, as well as common questions and answers.
                 </p>
 
                 <Accordion.Root class="mt-12">
                     <Accordion.Item value="item-1">
-                      <Accordion.Trigger class="font-bold text-lg">Library Structure</Accordion.Trigger>
+                      <Accordion.Trigger class="font-bold text-lg">Library Creation Tool</Accordion.Trigger>
                       <Accordion.Content>
-                        <h2 class="text-lg font-bold ml-2">Example Library Folder Structure</h2>
-                        <ul class="text-lg ml-4">
-                            <li class="ml-2">md.json</li>
-                            <li class="ml-2 underline">gba/</li>
-                            <li class="ml-4">real.gba</li>
-                            <li class="ml-4">index.json</li>
-                            <li class="ml-2 underline">nes/</li>
-                            <li class="ml-4">real.nes</li>
-                            <li class="ml-4">index.json</li>
-                        </ul>
-
-                        <h2 class="mt-2 text-lg font-bold ml-2">md.json Example</h2>
-                        <div class="ml-4">
-                            <JsonView {json} />
-                        </div>
-                        <p class="mt-3 font-light">
-                            In this example, you are defining the name of a folder, as well as the path to the folder, then doing this for each folder within your library.
-                        </p>
-                        <h2 class="mt-2 text-lg font-bold ml-2">index.json Example</h2>
-                        <div class="ml-4">
-                            <JsonView json={json2} />
-                        </div>
-                        <p class="mt-3 font-light">
-                            In this example, you are defining the name of a game, and then it's filename.
-                        </p>
-                        <p class="mt-2 font-bold">
-                            In the future, we plan to have support for automated tools that can handle much of this for you.
-                        </p>
-                        
+                        You can find details regarding our library creation tool <Button class="px-0 font-bold underline" variant="link">here</Button> on our github wiki!
                       </Accordion.Content>
                     </Accordion.Item>
                     <Accordion.Item value="item-2">
                         <Accordion.Trigger class="font-bold text-lg">Custom Values</Accordion.Trigger>
                         <Accordion.Content>
                           In the future we may add support for custom options regarding theme, images, etc with your library.
-                        </Accordion.Content>
-                      </Accordion.Item>
-                      <Accordion.Item value="item-3">
-                        <Accordion.Trigger class="font-bold text-lg">Library Creation Tool</Accordion.Trigger>
-                        <Accordion.Content>
-                          We plan to develop a tool that will automatically create a skeleton for you, populate an existing library with proper folders, and more!
                         </Accordion.Content>
                       </Accordion.Item>
                   </Accordion.Root>
