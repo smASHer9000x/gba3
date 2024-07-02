@@ -109,7 +109,7 @@
                     <Accordion.Item value="item-1">
                       <Accordion.Trigger class="font-bold text-lg">Library Creation Tool</Accordion.Trigger>
                       <Accordion.Content>
-                        You can find details regarding our library creation tool <Button class="px-0 font-bold underline" variant="link">here</Button> on our github wiki!
+                        You can find details regarding our library creation tool <Button class="px-0 font-bold underline" variant="link" href="https://github.com/Cattn/GBAv3/wiki">here</Button> on our github wiki!
                       </Accordion.Content>
                     </Accordion.Item>
                     <Accordion.Item value="item-2">
