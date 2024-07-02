@@ -31,7 +31,7 @@
           <div class="p-1">
             <Card.Root>
               <Card.Content
-                class="flex-auto items-center justify-center p-6"
+                class="flex-auto items-center justify-center p-10 h-96 w-full rounded-md object-cover mb-5"
               >
               <img src={
                 i === 0 ? defaultTheme :
@@ -41,7 +41,7 @@
                 i === 4 ? sunsetTheme :
                 i === 5 ? synthTheme :
                 defaultTheme
-                } alt="Gray by Drew Beamer" class="h-full w-full rounded-md" />
+                } alt="Gray by Drew Beamer" class="h-full p-2 w-full rounded-md object-cover" />
                 <div class="flex justify-center mt-2">
                     <Button on:click={() => changeTheme(i === 0 ? "dark" : i === 1 ? "green" : i === 2 ? "oldGreen" : i === 3 ? "red" : i === 4 ? "sunset" : "synth")}>Change Theme</Button>
                 </div>
