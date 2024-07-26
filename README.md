@@ -12,5 +12,5 @@ Or, at the wiki linked above.
 ## Credits
 
 Lead Developer - Cattn
-> Developed by MSG.
+> Developed by MSG. 
 
