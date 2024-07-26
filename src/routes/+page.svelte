@@ -51,9 +51,11 @@
     <div class="flex gap-2">
         <Button href="{base}/library">Add a Library</Button>
         <Button variant="secondary" href="{base}/singleplayer">Play!</Button>
+    </div> 
     </div>
+    <div class="flex justify-center mt-2">
+    <h1>Wondering what happened to the old site? Read </h1> <Button class=" pl-1 pr-0 pt-0 pb-0 m-0 h-auto" variant="link" href="https://discord.gg/math-study-934807331668099142">in our discord.</Button>
     </div>
-
   <style>
     .hovered {
       filter: brightness(1.4);
