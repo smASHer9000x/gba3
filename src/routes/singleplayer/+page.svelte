@@ -6,6 +6,7 @@
     import { tick } from "svelte";
     import { consoles, sources } from "$lib/store";
     import { browser } from "$app/environment";
+    import { base } from "$app/paths";
    
     type Status = {
       value: string;
@@ -147,7 +148,7 @@
             {#if games[selectedStatus.value] && games[selectedStatus.value].length > 0}
                 {#each games[selectedStatus.value] as game (game.file)}
                     {#if game.title.toLowerCase().includes(searchTerm.toLowerCase())}
-                        <a href="/play?title={game.title}&core={currentConsole}&game={currentSrc}/{game.file}" class="group old-1 rounded-lg border px-4 py-4 shadow-sm hover:border-gray-400  hover:shadow-md focus-within:border-gray-500 focus-within:shadow-md">
+                        <a href="{base}/play?title={game.title}&core={currentConsole}&game={currentSrc}/{game.file}" class="group old-1 rounded-lg border px-4 py-4 shadow-sm hover:border-gray-400  hover:shadow-md focus-within:border-gray-500 focus-within:shadow-md">
                             <h2 class="text-lg font-bold mb-2">{game.title}</h2>
                             <p class="text-sm text-muted-foreground">{selectedStatus.label}</p>
                         </a>
@@ -161,7 +162,7 @@
                     {#if games[console.name] && games[console.name].length > 0}
                         {#each games[console.name] as game (game.file)}
                         {#if game.title.toLowerCase().includes(searchTerm.toLowerCase())}
-                            <a href="/play?core={currentConsole}&game={currentSrc}/{game.file}" class="group old-1 rounded-lg border px-4 py-4 shadow-sm hover:border-gray-400  hover:shadow-md focus-within:border-gray-500 focus-within:shadow-md">
+                            <a href="{base}/play?core={currentConsole}&game={currentSrc}/{game.file}" class="group old-1 rounded-lg border px-4 py-4 shadow-sm hover:border-gray-400  hover:shadow-md focus-within:border-gray-500 focus-within:shadow-md">
                                 <h2 class="text-lg font-bold mb-2">{game.title}</h2>
                                 <p class="text-sm text-muted-foreground">{selectedStatus.label}</p>
                             </a>
