@@ -12,10 +12,12 @@
 
     if (browser) {
         const urlParams = new URLSearchParams(window.location.search);
-        game = urlParams.get("game");
+        game = decodeURIComponent(urlParams.get("game"));
         core = urlParams.get("core");
-        title = urlParams.get("title");
-        url = base + "/launch.html?core=" + core + "&game=" + game;
+        title = decodeURIComponent(urlParams.get("title"));
+        let endURL = encodeURIComponent(game)
+        url = base + "/launch.html?core=" + core + "&game=" + endURL;
+        console.log(url);
     }
 
     function toggleFullScreen() {

@@ -61,7 +61,7 @@
             .then((data) => {
                 if (data.games) {
                     games[consoleName] = data.games;
-                    currentSrc = selectedConsole.source + "/" + selectedConsole.folder;
+                    currentSrc = selectedConsole.source + "" + selectedConsole.folder;
                     currentConsole = selectedConsole.core;
                 }
             })
@@ -148,7 +148,7 @@
             {#if games[selectedStatus.value] && games[selectedStatus.value].length > 0}
                 {#each games[selectedStatus.value] as game (game.file)}
                     {#if game.title.toLowerCase().includes(searchTerm.toLowerCase())}
-                        <a href="{base}/play?title={game.title}&core={currentConsole}&game={currentSrc}/{game.file}" class="group old-1 rounded-lg border px-4 py-4 shadow-sm hover:border-gray-400  hover:shadow-md focus-within:border-gray-500 focus-within:shadow-md">
+                        <a href="{base}/play?title={encodeURIComponent(game.title)}&core={currentConsole}&game={encodeURIComponent(`${currentSrc}/${game.file}`)}" class="group old-1 rounded-lg border px-4 py-4 shadow-sm hover:border-gray-400  hover:shadow-md focus-within:border-gray-500 focus-within:shadow-md">
                             <h2 class="text-lg font-bold mb-2">{game.title}</h2>
                             <p class="text-sm text-muted-foreground">{selectedStatus.label}</p>
                         </a>
@@ -162,7 +162,7 @@
                     {#if games[console.name] && games[console.name].length > 0}
                         {#each games[console.name] as game (game.file)}
                         {#if game.title.toLowerCase().includes(searchTerm.toLowerCase())}
-                            <a href="{base}/play?core={currentConsole}&game={currentSrc}/{game.file}" class="group old-1 rounded-lg border px-4 py-4 shadow-sm hover:border-gray-400  hover:shadow-md focus-within:border-gray-500 focus-within:shadow-md">
+                            <a href="{base}/play?core={currentConsole}&game={encodeURI(currentSrc)}/{encodeURI(game.file)}" class="group old-1 rounded-lg border px-4 py-4 shadow-sm hover:border-gray-400  hover:shadow-md focus-within:border-gray-500 focus-within:shadow-md">
                                 <h2 class="text-lg font-bold mb-2">{game.title}</h2>
                                 <p class="text-sm text-muted-foreground">{selectedStatus.label}</p>
                             </a>

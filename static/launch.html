@@ -5,7 +5,7 @@
 </div>
 <script>
     const urlParams = new URLSearchParams(window.location.search);
-    game = urlParams.get("game");
+    game = decodeURIComponent(urlParams.get("game"));
     core = urlParams.get("core");
     window.EJS_player = '#game';
     window.EJS_core = core;
