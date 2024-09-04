@@ -2,7 +2,7 @@
     "games": [
         {
             "title": "Tetris",
-            "file": "fTetris.nes"
+            "file": "Tetris.nes"
         }
     ]
 }
