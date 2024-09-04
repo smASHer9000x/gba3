@@ -1,8 +1,8 @@
 {
     "games": [
         {
-            "title": "Fake Racing",
-            "file": "fake.nes"
+            "title": "Tetris",
+            "file": "fTetris (U) [!].nes"
         }
     ]
 }
